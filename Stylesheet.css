@@ -1,0 +1,55 @@
+/* *{
+  border: red 1px solid
+}
+
+.green{
+  border: green 1px solid
+}
+
+.blue{
+  border: blue 1px solid
+}
+*/
+body {
+  margin: 0;
+}
+
+h3{
+  padding: 0;
+  margin: 0;
+}
+
+.nav-bar-main{
+  background: #000;
+  color: #fff;
+  font-size: 1.5em;
+}
+
+.nav-bar-content{
+  margin: auto;
+  width: 80%;
+  overflow: hidden;
+}
+
+.nav-bar-buttons ul {
+  margin: 0;
+  padding: 0;
+}
+
+.nav-bar-buttons{
+ float: right;
+}
+
+.nav-button{
+  margin-left: 20px;
+}
+
+.nav-button a{
+  text-decoration: none;
+  color: inherit;
+}
+
+
+.ilb{
+  display: inline-block;
+}
