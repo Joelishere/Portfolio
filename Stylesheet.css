@@ -16,6 +16,7 @@
 */
 body {
   margin: 0;
+  background: #eee;
 }
 
 h3{
@@ -72,13 +73,18 @@ h3{
 .page-container{
   width: 80%;
   margin: auto;
-
+  background: #fff;
+  padding-top: 30px;
 }
 
 .section-title{
   text-align: center;
   font-size: 2em;
   font-family: inherit;
+}
+
+.section-content{
+  margin: 0 20px 20px 20px;
 }
 
 /*
