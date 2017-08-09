@@ -23,11 +23,11 @@ h3{
   margin: 0;
 }
 
-/*
-* Nav bar style here
-*/
 
-
+@media only screen and (min-width: 720px){
+  /*
+  * Nav bar style here
+  */
 .nav-bar-main{
   background: #000;
   color: #fff;
@@ -38,6 +38,7 @@ h3{
   margin: auto;
   width: 80%;
   overflow: hidden;
+  height: inherit;
 }
 
 .nav-bar-buttons ul {
@@ -47,18 +48,44 @@ h3{
 
 .nav-bar-buttons{
  float: right;
+ margin-top: 5px;
+
 }
 
 .nav-button{
   margin-left: 20px;
 }
 
+.nav-button:hover{
+  background: blue;
+}
+
 .nav-button a{
   text-decoration: none;
   color: inherit;
+  padding: 5px;
 }
 
+/*
+* Style for main content sections
+*/
+.page-container{
+  width: 80%;
+  margin: auto;
 
+}
+
+.section-title{
+  text-align: center;
+  font-size: 2em;
+  font-family: inherit;
+}
+
+/*
+* Generic style code below
+*/
 .ilb{
   display: inline-block;
+}
+
 }
