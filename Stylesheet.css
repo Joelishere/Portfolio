@@ -1,4 +1,5 @@
- /**{
+/*
+*{
   border: red 1px solid
 }
 
@@ -9,8 +10,8 @@
 .blue{
   border: blue 1px solid
 }
-*/
 
+*/
 
 /*
 * Main set-up for page
@@ -18,6 +19,7 @@
 body {
   margin: 0;
   background: #eee;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
 h3{
@@ -26,7 +28,7 @@ h3{
 }
 
 
-@media only screen and (min-width: 720px){
+@media only screen and (min-width: 800px){
   /*
   * Nav bar style here
   */
@@ -34,12 +36,13 @@ h3{
   background: #000;
   color: #fff;
   font-size: 1.5em;
+  border: 1px black solid;
 }
 
 .nav-bar-content{
   margin: auto;
-  width: 80%;
-  overflow: hidden;
+  width: 100%;
+  max-width: 1280px;
   height: inherit;
 }
 
@@ -71,22 +74,42 @@ h3{
 /*
 * Style for main content sections
 */
+
+.profile-image{
+  margin: 25px 25px 25px 0;
+
+}
+
+.profile-image img{
+  border-radius: 20px;
+  border: 2px #000 solid;
+}
+
 .page-container{
-  width: 80%;
+<<<<<<< HEAD
+  width: 1280px;
+=======
+  width: 1025px;
+>>>>>>> origin/Work-branch
   margin: auto;
   background: #fff;
-  padding-top: 30px;
+}
+
+.profile-picture img{
+  border-radius: 20px;
+  text-align: center;
 }
 
 .section-title{
   text-align: center;
   font-size: 2em;
   font-family: inherit;
+  padding: 50px 0 20px 0;
 }
 
 .section-content{
   padding: 0 50px 50px 50px;
-  background: rgba(200, 200, 200, 0.3);
+  /*background: rgba(200, 200, 200, 0.3);*/
 }
 
 .social-buttons-container{
@@ -95,22 +118,36 @@ h3{
 }
 
 .about-text{
-  width: 50%;
+<<<<<<< HEAD
+  width: %;
+=======
+  vertical-align: top;
+  margin-top: 25px;
+  width: 666px;
+  font-size: 1.25em;
+}
+
+.about-text p {
+  margin-bottom: 15px;
+>>>>>>> origin/Work-branch
 }
 
 .social-button{
   width: 13%;
   height: 50px;
   margin: 1%;
-  border: 1px black solid;
+  /*border: 1px black solid;*/
   border-radius: 10px;
   overflow: hidden;
+  background: #015249;
 }
 
 .port-picture{
   margin-bottom: 10px;
-  width: 40%;
+  width: 440px;
+  margin: 10px ;
   height: 300px;
+  border-radius: 20px;
   background-color: green;
 }
 
@@ -150,13 +187,12 @@ form{
 }
 
 .about-section{
-  background-image: url(https://i.ytimg.com/vi/A7ZkZazfvao/maxresdefault.jpg);
+  /*background-image: url(https://i.ytimg.com/vi/A7ZkZazfvao/maxresdefault.jpg);*/
+  background: #bbb;
+
 }
 
-.footer{
-  height: 50px;
-  background: black;
-}
+
 
 .form-label{
   width: 200px;
@@ -169,7 +205,16 @@ form{
 
 form{
   width: 100%;
+  margin-left: 25px;
 }
+
+.footer{
+  height: 50px;
+  width: 100%;
+
+}
+
+
 /*
 * Generic style code below
 */
