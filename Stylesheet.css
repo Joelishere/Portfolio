@@ -72,10 +72,15 @@ h3{
 * Style for main content sections
 */
 .page-container{
-  width: 80%;
+  width: 1280px;
   margin: auto;
   background: #fff;
   padding-top: 30px;
+}
+
+.profile-picture img{
+  border-radius: 20px;
+  text-align: center;
 }
 
 .section-title{
@@ -95,7 +100,7 @@ h3{
 }
 
 .about-text{
-  width: 50%;
+  width: %;
 }
 
 .social-button{
