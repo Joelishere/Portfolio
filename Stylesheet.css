@@ -28,7 +28,7 @@ h3{
 }
 
 
-@media only screen and (min-width: 800px){
+@media only screen and (min-width: 1025px){
   /*
   * Nav bar style here
   */
@@ -37,13 +37,16 @@ h3{
   color: #fff;
   font-size: 1.5em;
   border: 1px black solid;
+  height: 50px;
 }
+
 
 .nav-bar-content{
   margin: auto;
   width: 100%;
-  max-width: 1280px;
+  max-width: 1025px;
   height: inherit;
+  margin-top: 5px
 }
 
 .nav-bar-buttons ul {
@@ -91,6 +94,11 @@ h3{
   background: #fff;
 }
 
+.profile-picture img{
+  border-radius: 20px;
+  text-align: center;
+}
+
 .section-title{
   text-align: center;
   font-size: 2em;
@@ -135,8 +143,9 @@ h3{
   margin: 10px ;
   height: 300px;
   border-radius: 20px;
-  background-color: green;
+  background: green;
 }
+
 
 .block{
   display: block;
@@ -145,7 +154,7 @@ h3{
 .t-row{
   display: table-row;
   font-size: 3em;
-  width: 100%;
+  width: 90%;
   height: 65px;
 }
 
@@ -159,12 +168,14 @@ form{
 }
 
 .form-sect{
-  width: 45%;
+  width: 60%;
+  background: grey;
+  padding: 15px;
 }
 
 .form-element{
   height: 40px;
-  width: 100%;
+  width: 90%;
 }
 
 .section-break{
@@ -199,6 +210,10 @@ form{
   height: 50px;
   width: 100%;
 
+}
+
+input{
+  border: none;
 }
 
 
