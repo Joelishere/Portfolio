@@ -20,6 +20,7 @@ body {
   margin: 0;
   background: #eee;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  text-shadow: 1px 2px #000;
 }
 
 h3{
@@ -33,11 +34,11 @@ h3{
   * Nav bar style here
   */
 .nav-bar-main{
-  background: #000;
+  background: #1d1145;
   color: #fff;
   font-size: 1.5em;
-  border: 1px black solid;
   height: 50px;
+  border: 1px #1d1145 solid;
 }
 
 
@@ -91,7 +92,12 @@ h3{
 .page-container{
   width: 1025px;
   margin: auto;
-  background: #fff;
+  color: #fff;
+  background: #175da3;
+background: -moz-linear-gradient(top,  #175da3 3%, #175da3 3%, #714294 43%, #714294 63%, #b6394e 91%);
+background: -webkit-linear-gradient(top,  #175da3 3%,#175da3 3%,#714294 43%,#714294 63%,#b6394e 91%);
+background: linear-gradient(to bottom,  #175da3 3%,#175da3 3%,#714294 43%,#714294 63%,#b6394e 91%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#175da3', endColorstr='#b6394e',GradientType=0 );
 }
 
 .profile-picture img{
@@ -121,6 +127,8 @@ h3{
   margin-top: 25px;
   width: 666px;
   font-size: 1.25em;
+  font-weight: bold;
+
 }
 
 .about-text p {
@@ -128,9 +136,9 @@ h3{
 }
 
 .social-button{
-  width: 13%;
+  width: 200px;
   height: 50px;
-  margin: 1%;
+  margin: 10px;
   /*border: 1px black solid;*/
   border-radius: 10px;
   overflow: hidden;
@@ -182,16 +190,24 @@ form{
   width: 90%;
   border-top: #ccc 1px solid;
   margin: auto;
+  box-shadow: 1px 2px #000;
 }
-
+/*
 .about-section{
-  /*background-image: url(https://i.ytimg.com/vi/A7ZkZazfvao/maxresdefault.jpg);*/
-  background: #bbb;
-
+  background: #175DA3;
+  color: #fff;
 }
 
+.portfolio-section{
+  background: #714294;
+  color: #fff;
+}
 
-
+.contact-section{
+  background: #B6394E;
+  color: #fff;
+}
+*/
 .form-label{
   width: 200px;
 }
@@ -209,13 +225,20 @@ form{
 .footer{
   height: 50px;
   width: 100%;
-
+  background: #1d1145;
 }
 
 input{
   border: none;
 }
 
+.line-break{
+  width: 80%;
+  margin: auto;
+  border-top: 5px #eee solid;
+  margin-bottom: 20px;
+  box-shadow: 2px 2px #000;
+}
 
 /*
 * Generic style code below
