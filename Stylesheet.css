@@ -57,16 +57,16 @@ h3{
 
 .nav-bar-buttons{
  float: right;
- margin-top: 5px;
-
+ margin-top: -5px;
 }
 
 .nav-button{
-  margin-left: 20px;
+  padding: 10px;
 }
 
 .nav-button:hover{
-  background: blue;
+  background: #714294;
+
 }
 
 .nav-button a{
@@ -145,13 +145,15 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#175da3', end
   background: #015249;
 }
 
-.port-picture{
+.port-picture-container{
   margin-bottom: 10px;
   width: 440px;
   margin: 10px ;
   height: 300px;
   border-radius: 20px;
-  background: green;
+  /*background: green;*/
+  position: relative;
+  overflow: hidden;
 }
 
 
@@ -250,6 +252,35 @@ input{
 ul, li, p{
   padding: 0;
   margin: 0;
+}
+
+.port-picture{
+  width: 100%;
+  height: auto;
+  border-radius: inherit;
+  position: absolute;
+  top: 0;
+  left: 0;
+
+}
+
+.portfolio-overlay{
+  position: absolute;
+  text-align: center;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.0);
+  color: rgba(0, 0, 0, 0.0);
+  text-shadow: none;
+  width: 100%;
+  height: 100%;
+}
+
+.portfolio-overlay:hover{
+
+  background: rgba(50, 50, 50, 0.90);
+  color: rgba(255, 255, 255, 1);
 }
 
 }
