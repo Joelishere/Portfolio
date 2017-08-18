@@ -226,6 +226,10 @@ form{
   height: 50px;
   width: 100%;
   background: #1d1145;
+  text-align: center;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.25em;
 }
 
 input{
