@@ -34,6 +34,11 @@ h3{
   * Nav bar style here
   */
 .nav-bar-main{
+  z-index: 2;
+  position: fixed;
+  top:0;
+  left: 0;
+  right: 0;
   background: #1d1145;
   color: #fff;
   font-size: 1.5em;
@@ -142,8 +147,15 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#175da3', end
   /*border: 1px black solid;*/
   border-radius: 10px;
   overflow: hidden;
-  background: #015249;
+  border: 2px #fff solid;
+  border-radius: 20px;
+  box-shadow: 1px 2px #000;
 }
+
+.social-button:active {
+  box-shadow:  -1px -1px #000;
+}
+
 
 /* Portfolio related style */
 .port-picture-container{
@@ -305,6 +317,9 @@ ul, li, p{
   margin: 0;
 }
 
+.centered-text{
+  text-align: center;
+}
 
 
 }
