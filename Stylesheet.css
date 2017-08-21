@@ -282,9 +282,17 @@ ul, li, p{
 }
 
 .portfolio-overlay:hover{
-
+  animation-name: fade-in;
+  animation-duration: 0.25s;
   background: rgba(50, 50, 50, 0.90);
   color: rgba(255, 255, 255, 1);
+}
+
+@keyframes fade-in{
+  from { background: rgba(0, 0, 0, 0.0);
+  color: rgba(0, 0, 0, 0.0); }
+  to {background: rgba(50, 50, 50, 0.90);
+  color: rgba(255, 255, 255, 1);}
 }
 
 }
