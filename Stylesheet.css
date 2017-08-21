@@ -145,6 +145,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#175da3', end
   background: #015249;
 }
 
+/* Portfolio related style */
 .port-picture-container{
   margin-bottom: 10px;
   width: 440px;
@@ -156,6 +157,52 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#175da3', end
   overflow: hidden;
 }
 
+.port-picture{
+  width: 100%;
+  height: auto;
+  min-height: 100%;
+  border-radius: inherit;
+  position: absolute;
+  top: 0;
+  left: 0;
+
+}
+
+.portfolio-overlay{
+  position: absolute;
+  text-align: center;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.0);
+  color: rgba(0, 0, 0, 0.0);
+  text-shadow: none;
+  width: 100%;
+  height: 100%;
+  animation-name: fade-out;
+  animation-duration: 0.25s
+}
+
+.portfolio-overlay:hover{
+  animation-name: fade-in;
+  animation-duration: 0.25s;
+  background: rgba(50, 50, 50, 0.90);
+  color: rgba(255, 255, 255, 1);
+}
+
+@keyframes fade-in{
+  from { background: rgba(0, 0, 0, 0.0);
+  color: rgba(0, 0, 0, 0.0); }
+  to {background: rgba(50, 50, 50, 0.90);
+  color: rgba(255, 255, 255, 1);}
+}
+
+@keyframes fade-out {
+  from {background: rgba(50, 50, 50, 0.90);
+  color: rgba(255, 255, 255, 1);}
+  to { background: rgba(0, 0, 0, 0.0);
+  color: rgba(0, 0, 0, 0.0); }
+}
 
 .block{
   display: block;
@@ -258,41 +305,6 @@ ul, li, p{
   margin: 0;
 }
 
-.port-picture{
-  width: 100%;
-  height: auto;
-  border-radius: inherit;
-  position: absolute;
-  top: 0;
-  left: 0;
 
-}
-
-.portfolio-overlay{
-  position: absolute;
-  text-align: center;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background: rgba(0, 0, 0, 0.0);
-  color: rgba(0, 0, 0, 0.0);
-  text-shadow: none;
-  width: 100%;
-  height: 100%;
-}
-
-.portfolio-overlay:hover{
-  animation-name: fade-in;
-  animation-duration: 0.25s;
-  background: rgba(50, 50, 50, 0.90);
-  color: rgba(255, 255, 255, 1);
-}
-
-@keyframes fade-in{
-  from { background: rgba(0, 0, 0, 0.0);
-  color: rgba(0, 0, 0, 0.0); }
-  to {background: rgba(50, 50, 50, 0.90);
-  color: rgba(255, 255, 255, 1);}
-}
 
 }
