@@ -12,17 +12,18 @@
       </div>
       <div class="nav-bar-buttons ilb green">
         <ul>
-          <li class="nav-button ilb"><a href="">ABOUT</a></li>
-          <li class="nav-button ilb"><a href="">PORTFOLIO</a></li>
-          <li class="nav-button ilb"><a href="">CONTACT</a></li>
+          <li class="nav-button ilb"><a href="#about">ABOUT</a></li>
+          <li class="nav-button ilb"><a href="#portfolio">PORTFOLIO</a></li>
+          <li class="nav-button ilb"><a href="#contact">CONTACT</a></li>
         </ul>
       </div>
     </div>
   </div>
 
   <div class="page-container">
-    <div class="about-section">
+    <div class="about-section" id="about">
       <div class="section-content">
+       <div class="spacer"></div>
        <h3 class="section-title">ABOUT ME</h3>
        <div class="line-break"></div>
        <div>
@@ -43,14 +44,13 @@
          </div>
          <div class="line-break"></div>
       </div>
-
+      <h4 class="section-subtitle">Social Links</h4>
       <div class="social-buttons-container">
         <ul>
-          <li class="ilb social-button"><a>
-            Linkedin<img src="In-2C-41px-TM.png" /></a></li>
-          <li class="ilb social-button">Github</li>
-          <li class="ilb social-button">Free Code Camp</li>
-          <li class="ilb social-button">Twitter</li>
+          <a href="https://www.linkedin.com/in/joel-warburton-7806618b/"><li class="ilb social-button"><div class="v-cent"><div class="ilb"><p>Linkedin</p></div><div class="ilb button-logo"><img src="In-White-28px-R.png" /></div></div></li></a>
+          <a href="https://github.com/Joelishere"><li class="ilb social-button"><div class="v-cent"><div class="ilb"><p>GitHub</p></div><div class="ilb button-logo"><img src="GitHub-Mark-Light-32px.png" /></div></div></li></a>
+          <a href="https://www.freecodecamp.org/fccbee3514f"><li class="ilb social-button"><div class="v-cent"><div class="ilb"><p>FreeCodeCamp</p></div><div class="ilb button-logo"><img src="glyph.png" /></div></div></li></a>
+          <a href="http://twitter.com"><li class="ilb social-button"><div class="v-cent"><div class="ilb"><p>Twitter</p></div><div class="ilb button-logo"><img src="Twitter_SI.png" /></div></div></li></a>
         </ul>
       </div>
       </div>
@@ -58,21 +58,32 @@
 
     <div class="section-break"></div>
 
-    <div class="portfolio-section">
+    <div class="portfolio-section" id="portfolio">
+
       <div class="section-content">
         <h3 class="section-title">PORTFOLIO</h3>
         <div class="line-break"></div>
         <div>
+          <p class="centered-text">Below are a few examples of projects I have worked on.</p>
+          <p class="centered-text">Hover your mouse over the images to read about the projects</p>
           <div class="port-picture-container ilb">
             <div class="portfolio-overlay">
               <h4>Running Club Website</h4>
-              <p>Template text</p>
+              <p>During my time at University one ofhe projects we were tasked
+              with was to produce a Admin Dashboard for the Universities running
+              club. This dashboard was designed to allow the admins of the group
+               to manage and publish content to the running club's webpage.</p>
             </div>
             <img class="port-picture" src="Uni-project.png" />
           </div>
-          <div class="port-picture-container ilb"></div>
-          <div class="port-picture-container ilb"></div>
-          <div class="port-picture-container ilb"></div>
+
+          <div class="port-picture-container ilb">
+            <div class="portfolio-overlay">
+              <h4>Sample image</h4>
+              <p>A picture of a sample project development</p>
+            </div>
+            <img class="port-picture" src="sample.png" />
+          </div>
 
         </div>
 
@@ -81,34 +92,37 @@
 
     <div class="section-break"></div>
 
-    <div class="contact-section">
+    <div class="contact-section" id="contact">
       <div class="section-content">
         <h3 class="section-title">CONTACT ME</h3>
         <div class="line-break"></div>
+        <div class="contact-align">
         <div class="form-sect ilb">
-          <form class="green">
-            <div class="t-row">
-              <label class="t-cell form-label" for="name">Name:</label>
-              <input class="form-element t-cell" type="text" name="name" />
-            </div>
-            <div class="t-row">
-              <label class="t-cell form-label" for="email">Email:</label>
-              <input class="form-element t-cell" type="text" name="email" />
-            </div>
-            <div class="t-row">
-              <label class="t-cell form-label" for="message">Message:</label>
-              <textarea class="form-element text-area t-cell"></textarea>
-            </div>
-            <button>Submit</button>
+          <p>Send me a message</p>
+          <form>
+            <label for="name-input">Name:</label>
+            <input  type="text" id="name-input" />
+            <label for="email">Email:</label>
+            <input type="text" id="email" />
+            <label for="message-box">Message:</label>
+            <textarea id="message-box"></textarea>
           </form>
         </div>
-        <div class="ilb">social links again</div>
+        <div class="ilb social-btm">
+          <ul>
+            <a href="https://www.linkedin.com/in/joel-warburton-7806618b/"><li class="social-button"><div class="v-cent"><div class="ilb"><p>Linkedin</p></div><div class="ilb button-logo"><img src="In-White-28px-R.png" /></div></div></li></a>
+            <a href="https://github.com/Joelishere"><li class="social-button"><div class="v-cent"><div class="ilb"><p>GitHub</p></div><div class="ilb button-logo"><img src="GitHub-Mark-Light-32px.png" /></div></div></li></a>
+            <a href="https://www.freecodecamp.org/fccbee3514f"><li class="social-button"><div class="v-cent"><div class="ilb"><p>FreeCodeCamp</p></div><div class="ilb button-logo"><img src="glyph.png" /></div></div></li></a>
+            <a href="http://twitter.com"><li class="social-button"><div class="v-cent"><div class="ilb"><p>Twitter</p></div><div class="ilb button-logo"><img src="Twitter_SI.png" /></div></div></li></a>
+          </ul>
+        </div>
+      </div>
       </div>
     </div>
   </div>
 <!-- footer section -->
 <div class="footer">
-  <p>Created by Joel Warburton.  2017</p>
+  <p class="v-cent">Created by Joel Warburton &copy;  2017</p>
 </div>
 
 </body>

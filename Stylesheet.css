@@ -21,6 +21,11 @@ body {
   background: #eee;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   text-shadow: 1px 2px #000;
+  background: #999;
+  background: -moz-linear-gradient(top,  #175da3 3%, #175da3 3%, #714294 43%, #714294 63%, #b6394e 91%);
+  background: -webkit-linear-gradient(top,  #175da3 3%,#175da3 3%,#714294 43%,#714294 63%,#b6394e 91%);
+  background: linear-gradient(to bottom,  #175da3 3%,#175da3 3%,#714294 43%,#714294 63%,#b6394e 91%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#175da3', endColorstr='#b6394e',GradientType=0 );
 }
 
 h3{
@@ -34,6 +39,11 @@ h3{
   * Nav bar style here
   */
 .nav-bar-main{
+  z-index: 2;
+  position: fixed;
+  top:0;
+  left: 0;
+  right: 0;
   background: #1d1145;
   color: #fff;
   font-size: 1.5em;
@@ -44,8 +54,8 @@ h3{
 
 .nav-bar-content{
   margin: auto;
-  width: 100%;
-  max-width: 1025px;
+  width: 90%;
+  min-width: 1025px;
   height: inherit;
   margin-top: 5px
 }
@@ -93,11 +103,6 @@ h3{
   width: 1025px;
   margin: auto;
   color: #fff;
-  background: #175da3;
-background: -moz-linear-gradient(top,  #175da3 3%, #175da3 3%, #714294 43%, #714294 63%, #b6394e 91%);
-background: -webkit-linear-gradient(top,  #175da3 3%,#175da3 3%,#714294 43%,#714294 63%,#b6394e 91%);
-background: linear-gradient(to bottom,  #175da3 3%,#175da3 3%,#714294 43%,#714294 63%,#b6394e 91%);
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#175da3', endColorstr='#b6394e',GradientType=0 );
 }
 
 .profile-picture img{
@@ -112,6 +117,13 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#175da3', end
   padding: 50px 0 20px 0;
 }
 
+.section-subtitle{
+  text-align: center;
+  font-size: 1.5em;
+  font-family: inherit;
+  padding: 5px 0 20px 0;
+}
+
 .section-content{
   padding: 0 50px 50px 50px;
   /*background: rgba(200, 200, 200, 0.3);*/
@@ -119,7 +131,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#175da3', end
 
 .social-buttons-container{
   text-align: center;
-  margin: 50px 0 50px 0;
+  margin: 30px 0 30px 0;
 }
 
 .about-text{
@@ -137,14 +149,35 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#175da3', end
 
 .social-button{
   width: 200px;
-  height: 50px;
+  height: 60px;
   margin: 10px;
+  text-decoration: none;
+  color: #fff;
   /*border: 1px black solid;*/
   border-radius: 10px;
   overflow: hidden;
-  background: #015249;
+  border: 2px #fff solid;
+  border-radius: 20px;
+  box-shadow: 1px 2px #000;
+  vertical-align: bottom;
+  font-weight: bold;
 }
 
+
+.social-button:active {
+  box-shadow:  -1px -1px #000;
+}
+
+.v-cent{
+  margin-top: 15px;
+}
+
+.button-logo{
+  vertical-align: middle;
+  margin-left: 10px;
+}
+
+/* Portfolio related style */
 .port-picture-container{
   margin-bottom: 10px;
   width: 440px;
@@ -156,37 +189,59 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#175da3', end
   overflow: hidden;
 }
 
+.port-picture{
+  width: 100%;
+  height: auto;
+  min-height: 100%;
+  border-radius: inherit;
+  position: absolute;
+  top: 0;
+  left: 0;
+
+}
+
+.portfolio-overlay{
+  position: absolute;
+  text-align: center;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.0);
+  color: rgba(0, 0, 0, 0.0);
+  text-shadow: none;
+  width: 100%;
+  height: 100%;
+  animation-name: fade-out;
+  animation-duration: 0.25s
+}
+
+.portfolio-overlay:hover{
+  animation-name: fade-in;
+  animation-duration: 0.25s;
+  background: rgba(50, 50, 50, 0.90);
+  color: rgba(255, 255, 255, 1);
+}
+
+@keyframes fade-in{
+  from { background: rgba(0, 0, 0, 0.0);
+  color: rgba(0, 0, 0, 0.0); }
+  to {background: rgba(50, 50, 50, 0.90);
+  color: rgba(255, 255, 255, 1);}
+}
+
+@keyframes fade-out {
+  from {background: rgba(50, 50, 50, 0.90);
+  color: rgba(255, 255, 255, 1);}
+  to { background: rgba(0, 0, 0, 0.0);
+  color: rgba(0, 0, 0, 0.0); }
+}
 
 .block{
   display: block;
 }
 
-.t-row{
-  display: table-row;
-  font-size: 3em;
-  width: 90%;
-  height: 65px;
-}
 
-.t-cell{
-  display: table-cell;
-  vertical-align: text-top;
-}
 
-form{
-  display: table;
-}
-
-.form-sect{
-  width: 60%;
-  background: grey;
-  padding: 15px;
-}
-
-.form-element{
-  height: 40px;
-  width: 90%;
-}
 
 .section-break{
   width: 90%;
@@ -210,19 +265,9 @@ form{
   color: #fff;
 }
 */
-.form-label{
-  width: 200px;
-}
-
-.text-area{
-  height: 200px;
-}
 
 
-form{
-  width: 100%;
-  margin-left: 25px;
-}
+
 
 .footer{
   height: 50px;
@@ -253,46 +298,70 @@ input{
   display: inline-block;
 }
 
+.spacer{
+  height: 50px;
+}
+
 ul, li, p{
   padding: 0;
   margin: 0;
 }
 
-.port-picture{
-  width: 100%;
-  height: auto;
-  border-radius: inherit;
-  position: absolute;
-  top: 0;
-  left: 0;
-
-}
-
-.portfolio-overlay{
-  position: absolute;
+.centered-text{
   text-align: center;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background: rgba(0, 0, 0, 0.0);
-  color: rgba(0, 0, 0, 0.0);
-  text-shadow: none;
-  width: 100%;
-  height: 100%;
+  margin: 5px;
 }
 
-.portfolio-overlay:hover{
-  animation-name: fade-in;
-  animation-duration: 0.25s;
-  background: rgba(50, 50, 50, 0.90);
-  color: rgba(255, 255, 255, 1);
+.form-sect{
+  width: 400px;
+  border: 2px #fff solid;
+  border-radius: 20px;
+  padding: 20px;
+  margin-top: 40px;
+  box-shadow: 1px 2px #000;
+  overflow: hidden;
+  vertical-align: top;
 }
 
-@keyframes fade-in{
-  from { background: rgba(0, 0, 0, 0.0);
-  color: rgba(0, 0, 0, 0.0); }
-  to {background: rgba(50, 50, 50, 0.90);
-  color: rgba(255, 255, 255, 1);}
+.form-sect p{
+  text-align: center;
+  padding-bottom: 20px;
+  font-size: 1.5em;
 }
+
+form{
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  grid-template-rows: 1fr 1fr 3fr;
+  grid-gap: 10px;
+  font-size: 1.5em;
+
+}
+
+label{
+
+  text-align: right;
+  grid-column: 1 / 2;
+
+}
+
+input{
+  grid-column: 2 / 3;
+  box-shadow: 1px 2px #000;
+  font-size: inherit;
+}
+
+textarea{
+  box-shadow: 1px 2px #000;
+  font-size: inherit;
+}
+
+.social-btm{
+  text-align: center;
+  margin: 30px 20px 25px 100px;
+  align-items: center;
+}
+
+
 
 }
